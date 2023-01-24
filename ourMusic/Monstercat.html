@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- 폰트어썸 -->
     <script src="https://kit.fontawesome.com/d1c72c4e39.js" crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Music - Monstercat</title>
     <link rel="stylesheet" href="./Monstercat.css">
 </head>
 <body>
@@ -32,7 +32,33 @@
         <div id="section2">
             <div>FEATURED RELEASES</div>
             <div class="flex">
-                <div id="box"></div>
+                <div id="box" class="flex">
+                    <div class="flex">
+                        <div>
+                            <img id="albumImg" src="https://cdx.monstercat.com?encoding=webp&url=https%3A%2F%2Fwww.monstercat.com%2Frelease%2FMCS1394%2Fcover&width=512" alt="">
+                        </div>
+                        <div>
+                            <div id="title">FLYING</div>
+                            <div id="artist">CURBI</div>
+                            <div class="flex" id="artistImgBox">
+                                <div class="artistImg"></div>
+                            </div>
+                            <div id="viewmore">VIEW RELEASE</div>
+                        </div>
+                    </div>
+                    <!-- <div>
+                        <img src="https://cdx.monstercat.com?encoding=webp&url=https%3A%2F%2Fwww.monstercat.com%2Frelease%2FMCS1429%2Fcover&width=512" alt="">
+                    </div>
+                    <div>
+                        <img src="https://cdx.monstercat.com?encoding=webp&url=https%3A%2F%2Fwww.monstercat.com%2Frelease%2FMCS1476%2Fcover&width=512" alt="">
+                    </div>
+                    <div>
+                        <img src="https://cdx.monstercat.com?encoding=webp&url=https%3A%2F%2Fwww.monstercat.com%2Frelease%2FMCS1430%2Fcover&width=512" alt="">
+                    </div>
+                    <div>
+                        <img src="https://cdx.monstercat.com?encoding=webp&url=https%3A%2F%2Fwww.monstercat.com%2Frelease%2FMCS1341%2Fcover&width=512" alt="">
+                    </div> -->
+                </div>
                 <div id="index" class="flex">
                     <div></div>
                     <div></div>
@@ -63,34 +89,54 @@
         </div>
         <div id="section4">
             <!-- 받아와야 하는 데이터 -->
+            <div>
+                <div class="flex">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="flex ">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
         </div>
-        <div id="section5">
+        <div id="section5" class="flex">
             <div><i class="fa-solid fa-angles-left"></i></div>
             <div><i class="fa-solid fa-angle-left"></i></div>
             <div>PREV</div>
-            <div>1</div>
+            <div id="pageNum">1</div>
             <div>NEXT</div>
             <div><i class="fa-solid fa-angles-right"></i></div>
             <div><i class="fa-solid fa-angle-right"></i></div>
         </div>
         <div id="section6">
             <div>OUR BRANDS</div>
-            <div>
-                <div>IMG</div>
-                <div>Unbound, Unlimited, Uncaged! Monstercat's original brand breaks the barriers of expectations, exploring heavy-hitting, bass-fueled sounds from talented artists across the sonic spectrum of dubstep, drum & bass, trap, breaks, and more.</div>
-            </div>
-            <div>
-                <div>IMG</div>
-                <div>For songs that capture the deeper connection between contemporary experience and shared journeys, Monstercat Instinct explores vibrant and melodic music rooted in house, pop, indie dance, and more.</div>
-            </div>
-            <div>
-                <div>IMG</div>
-                <div>Monstercat Silk is distinguished by its emotive and introspective qualities that have the ability to turn ‘emotions into sound,' providing the most poignant releases in progressive & deep house, chillout, trance, ambient, and more.</div>
+            <div class="flex">
+                <div>
+                    <div>IMG</div>
+                    <div>Unbound, Unlimited, Uncaged! Monstercat's original brand breaks the barriers of expectations, exploring heavy-hitting, bass-fueled sounds from talented artists across the sonic spectrum of dubstep, drum & bass, trap, breaks, and more.</div>
+                </div>
+                <div>
+                    <div>IMG</div>
+                    <div>For songs that capture the deeper connection between contemporary experience and shared journeys, Monstercat Instinct explores vibrant and melodic music rooted in house, pop, indie dance, and more.</div>
+                </div>
+                <div>
+                    <div>IMG</div>
+                    <div>Monstercat Silk is distinguished by its emotive and introspective qualities that have the ability to turn ‘emotions into sound,' providing the most poignant releases in progressive & deep house, chillout, trance, ambient, and more.</div>
+                </div>
             </div>
         </div>
     </main>
     <footer>
-        <div>
+        <div id="footer1" class="flex">
             <div>
                 <div>ABOUT MONSTERCAT</div>
                 <div>CONTACT US</div>
@@ -111,10 +157,10 @@
                 </div>
             </div>
         </div>
-        <div>
-            <div>
-                <div>2011 - 2023 © Monstercat, All Rights Reserved</div>
-                <div>
+        <div id="footer2">
+            <div class="flex">
+                <div id="Reserved">2011 - 2023 © Monstercat, All Rights Reserved</div>
+                <div class="flex">
                     <div></div>
                     <div><i class="fab fa-fw fa-instagram"></i></div>
                     <div><i class="fab fa-fw fa-tiktok"></i></div>
@@ -122,13 +168,17 @@
                     <div><i class="fab fa-fw fa-twitch"></i></div>
                     <div><i class="fab fa-fw fa-facebook"></i></div>
                     <div><i class="fab fa-fw fa-discord"></i></div>
+                    <div><i class="fab fa-fw fa-twitch"></i></div>
+                    <div><i class="fab fa-fw fa-facebook"></i></div>
+                    <div><i class="fab fa-fw fa-discord"></i></div>
                 </div>
             </div>
-            <div>
+            <div class="flex">
                 <div>We acknowledge with gratitude the traditional, ancestral and unceded land of the Coast Salish peoples, including the territories of the Sḵwx̱wú7mesh (Squamish), Stó:lō and Səl̓ílwəta/Selilwitulh (Tsleil-Waututh) and xʷməθkʷəy̓əm (Musqueam) Nations, on which Monstercat's Vancouver HQ stands.</div>
                 <div>We acknowledge the unceded and ancestral territories of the Gabrielino/Tongva peoples on which our LA team live and work.</div>
             </div>
         </div>
     </footer>
+    <script src="./Monstercat.js"></script>
 </body>
 </html>
