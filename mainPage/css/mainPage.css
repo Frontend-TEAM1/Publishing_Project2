@@ -35,14 +35,18 @@
 }
 
 .musicInfo {
-  width: 600px;
-  height: 600px;
+  /* width: 600px;
+  height: 600px; */
   padding: 10px 10px;
-  display: block;
+  display: flex;
+  /* 디스플레이block이면 align items 쓸수없음 */
+  flex-direction: column;
+  justify-content: center;
 }
 
 .ratio > div {
-  flex-grow: 1;
+  /* flex-grow: 1; */
+  width: 50%;
 }
 
 .musicInfo > div > h1 {
