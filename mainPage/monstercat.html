@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 폰트어썸 -->
+    <script src="https://kit.fontawesome.com/d1c72c4e39.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4a58f96b9a.js" crossorigin="anonymous"></script>
     <title>MainPage</title>
     <link rel="stylesheet" href="./css/comm.css" />
     <link rel="stylesheet" href="./css/mainPage.css" />
@@ -15,50 +18,50 @@
       <a href="monstercat.com">
         <img src="./assets/img/monstercat-logo.webp" width="50" heigth="50" />
       </a>
-      <button>
-        <img src="./assets/img/menubar.png" width="30" height="30" />
-      </button>
+      <!-- 연습 -->
+      <input type="checkbox" id="menuIcon" />
+      <label for="menuIcon">
+        <span>-</span>
+        <span>-</span>
+        <span>-</span>
+      </label>
+      <div class="sideBar"></div>
+      <!--연습-->
+      <div style="font-size: 1.5rem"><i class="fa-solid fa-bars"></i></div>
     </header>
 
     <!-- main -->
     <main class="sideMargin">
       <nav>
-        <ul class="snsIconList">
-          <li>
-            <a><img src="./assets/icons/icons-sns-instagram.png" width="30" heigth="30" /></a>
-          </li>
-          <li>
-            <a><img src="./assets/icons/icons-sns-tiktok.png" width="30" heigth="30" /></a>
-          </li>
-          <li>
-            <a><img src="./assets/icons/icons-sns-twitter.png" width="30" heigth="30" /></a>
-          </li>
-          <li>
-            <a><img src="./assets/icons/icons-sns-twitch.png" width="30" heigth="30" /></a>
-          </li>
-          <li>
-            <a><img src="./assets/icons/icons-sns-facebook.png" width="30" heigth="30" /></a>
-          </li>
-          <li>
-            <a><img src="./assets/icons/icons-sns-discord.png" width="30" heigth="30" /></a>
-          </li>
-          <li>
-            <a><img src="./assets/icons/icons-sns-monstercat.png" width="30" heigth="30" /></a>
-          </li>
+        <ul class="snsIconList" style="font-size: 1.5rem">
+          <li><i class="fab fa-fw fa-tiktok"></i></li>
+          <li><i class="fab fa-fw fa-twitter"></i></li>
+          <li><i class="fab fa-fw fa-twitch"></i></li>
+          <li><i class="fab fa-fw fa-facebook"></i></li>
+          <li><i class="fab fa-fw fa-discord"></i></li>
+          <li><i class="fab fa-fw fa-instagram"></i></li>
         </ul>
       </nav>
       <container>
         <section class="flex ratio">
-          <div><img src="./assets/img/concept-image.webp" /></div>
+          <div class="flex">
+            <div class="musicInfoText"><span>Instinct</span> - Released May 22, 2020</div>
+            <img src="./assets/img/concept-image.webp" />
+          </div>
           <div class="musicInfo">
-            <!--  하위 두 div 태그 1:1 비율 어떻게? // 수평정렬 어떻게? -->
             <div>
               <h1>LEVEL DAYS</h1>
               <p>CONRO</p>
             </div>
-            <div class="buttons">
-              <button>LISTEN NOW</button>
-              <button>SHARE</button>
+            <div class="buttons flex">
+              <button class="btn1 flex">
+                <i class="fa-solid fa-play"></i>
+                <span>LISTEN NOW</span>
+              </button>
+              <button class="btn2 flex">
+                <i class="fa-regular fa-share-from-square"></i>
+                <span>SHARE</span>
+              </button>
             </div>
           </div>
         </section>
@@ -92,87 +95,87 @@
           <div>
             <div class="flex font2">
               <div class="child">1</div>
-              <div class="child">></div>
+              <div class="child"><i class="fa-solid fa-play"></i></div>
               <div class="child">The Small Things <br /><span>Conro</span></div>
               <div class="child">3:35</div>
-              <div class="child"><img src="./assets/icons/icons-connect.png" /></div>
+              <div class="child"><i class="fa-regular fa-share-from-square"></i></div>
             </div>
             <div class="flex font2">
-              <div class="child">1</div>
-              <div class="child">></div>
-              <div class="child">The Small Things <br /><span>Conro</span></div>
-              <div class="child">3:35</div>
-              <div class="child"><img src="./assets/icons/icons-connect.png" /></div>
+              <div class="child">2</div>
+              <div class="child"><i class="fa-solid fa-play"></i></div>
+              <div class="child">Without Your Love <br /><span>Conro</span></div>
+              <div class="child">3:09</div>
+              <div class="child"><i class="fa-regular fa-share-from-square"></i></div>
             </div>
             <div class="flex font2">
-              <div class="child">1</div>
-              <div class="child">></div>
-              <div class="child">The Small Things <br /><span>Conro</span></div>
-              <div class="child">3:35</div>
-              <div class="child"><img src="./assets/icons/icons-connect.png" /></div>
+              <div class="child">3</div>
+              <div class="child"><i class="fa-solid fa-play"></i></div>
+              <div class="child">Therapy <br /><span>Conro</span></div>
+              <div class="child">3:06</div>
+              <div class="child"><i class="fa-regular fa-share-from-square"></i></div>
             </div>
             <div class="flex font2">
-              <div class="child">1</div>
-              <div class="child">></div>
-              <div class="child">The Small Things <br /><span>Conro</span></div>
-              <div class="child">3:35</div>
-              <div class="child"><img src="./assets/icons/icons-connect.png" /></div>
+              <div class="child">4</div>
+              <div class="child"><i class="fa-solid fa-play"></i></div>
+              <div class="child">Fighters <br /><span>Conro</span></div>
+              <div class="child">3:46</div>
+              <div class="child"><i class="fa-regular fa-share-from-square"></i></div>
             </div>
             <div class="flex font2">
-              <div class="child">1</div>
-              <div class="child">></div>
-              <div class="child">The Small Things <br /><span>Conro</span></div>
-              <div class="child">3:35</div>
-              <div class="child"><img src="./assets/icons/icons-connect.png" /></div>
+              <div class="child">5</div>
+              <div class="child"><i class="fa-solid fa-play"></i></div>
+              <div class="child">Way Ups <br /><span>Conro & Nevve</span></div>
+              <div class="child">3:32</div>
+              <div class="child"><i class="fa-regular fa-share-from-square"></i></div>
             </div>
             <div class="flex font2">
-              <div class="child">1</div>
-              <div class="child">></div>
-              <div class="child">The Small Things <br /><span>Conro</span></div>
-              <div class="child">3:35</div>
-              <div class="child"><img src="./assets/icons/icons-connect.png" /></div>
+              <div class="child">6</div>
+              <div class="child"><i class="fa-solid fa-play"></i></div>
+              <div class="child">Waiting <br /><span>Conro</span></div>
+              <div class="child">3:07</div>
+              <div class="child"><i class="fa-regular fa-share-from-square"></i></div>
             </div>
             <div class="flex font2">
-              <div class="child">1</div>
-              <div class="child">></div>
-              <div class="child">The Small Things <br /><span>Conro</span></div>
-              <div class="child">3:35</div>
-              <div class="child"><img src="./assets/icons/icons-connect.png" /></div>
+              <div class="child">7</div>
+              <div class="child"><i class="fa-solid fa-play"></i></div>
+              <div class="child">Dreaming <br /><span>Conro</span></div>
+              <div class="child">2:57</div>
+              <div class="child"><i class="fa-regular fa-share-from-square"></i></div>
             </div>
             <div class="flex font2">
-              <div class="child">1</div>
-              <div class="child">></div>
+              <div class="child">8</div>
+              <div class="child"><i class="fa-solid fa-play"></i></div>
               <div class="child">The Small Things <br /><span>Conro</span></div>
               <div class="child">3:35</div>
-              <div class="child"><img src="./assets/icons/icons-connect.png" /></div>
+              <div class="child"><i class="fa-regular fa-share-from-square"></i></div>
             </div>
             <div class="flex font2">
-              <div class="child">1</div>
-              <div class="child">></div>
+              <div class="child">9</div>
+              <div class="child"><i class="fa-solid fa-play"></i></div>
               <div class="child">The Small Things <br /><span>Conro</span></div>
               <div class="child">3:35</div>
-              <div class="child"><img src="./assets/icons/icons-connect.png" /></div>
+              <div class="child"><i class="fa-regular fa-share-from-square"></i></div>
             </div>
             <div class="flex font2">
-              <div class="child">1</div>
-              <div class="child">></div>
+              <div class="child">10</div>
+              <div class="child"><i class="fa-solid fa-play"></i></div>
               <div class="child">The Small Things <br /><span>Conro</span></div>
               <div class="child">3:35</div>
-              <div class="child"><img src="./assets/icons/icons-connect.png" /></div>
+              <div class="child"><i class="fa-regular fa-share-from-square"></i></div>
             </div>
             <div class="flex font2">
-              <div class="child">1</div>
-              <div class="child">></div>
+              <div class="child">11</div>
+              <div class="child"><i class="fa-solid fa-play"></i></div>
               <div class="child">The Small Things <br /><span>Conro</span></div>
               <div class="child">3:35</div>
-              <div class="child"><img src="./assets/icons/icons-connect.png" /></div>
+              <div class="child"><i class="fa-regular fa-share-from-square"></i></div>
             </div>
             <div class="flex font2">
-              <div class="child">1</div>
-              <div class="child">></div>
+              <div class="child">12</div>
+              <div class="child"><i class="fa-solid fa-play"></i></div>
               <div class="child">The Small Things <br /><span>Conro</span></div>
               <div class="child">3:35</div>
-              <div class="child"><img src="./assets/icons/icons-connect.png" /></div>
+              <div class="child"><i class="fa-regular fa-share-from-square"></i></div>
             </div>
           </div>
         </section>
@@ -196,54 +199,57 @@
 
     <!-- footer -->
     <footer class="sideMargin">
-      <section class="flex child2">
-        <ul class="">
-          <li>ABOUT MONSTERCAT</li>
-          <li>CONTACT US</li>
-          <li>CAREERS</li>
-          <li>NEWS</li>
-          <li>PRESS</li>
-        </ul>
-        <ul class="child2"></ul>>
-          <li>TERMS OF SERVICE</li>
-          <li>PRIVACY POLICY</li>
-        </ul>
-        <div class="child2"></div>>
-          <div>MONSTERCAT NEWS</div>
+      <section class="section1 flex child2">
+        <div class="ratio2">
+          <ul class="">
+            <li>ABOUT MONSTERCAT</li>
+            <li>CONTACT US</li>
+            <li>CAREERS</li>
+            <li>NEWS</li>
+            <li>PRESS</li>
+          </ul>
+        </div>
+        <div class="ration2">
+          <ul class="child2">
+            <li>TERMS OF SERVICE</li>
+            <li>PRIVACY POLICY</li>
+          </ul>
+        </div>
+        <div class="ratio2 child2">
+          <div class="gray">MONSTERCAT NEWS</div>
           <div>Don't miss a thing, wtay up to date<br />with the latest news from us.</div>
           <form>
-            <input placeholder="Enter email" />
-            <button>→</button>
+            <input placeholder="Enter email" style="background-color: transparent" />
+            <button style="background-color: transparent">→</button>
           </form>
         </div>
       </section>
-      <section>
+      <section class="section2 flex">
         <div>2011 - 2023 ® Monstercat, All Rights Rserved</div>
-        <ul class="flex snsIconList">
-          <li>
-            <a><img src="./assets/icons/icons-sns-instagram.png" width="30" heigth="30" /></a>
-          </li>
-          <li>
-            <a><img src="./assets/icons/icons-sns-tiktok.png" width="30" heigth="30" /></a>
-          </li>
-          <li>
-            <a><img src="./assets/icons/icons-sns-twitter.png" width="30" heigth="30" /></a>
-          </li>
-          <li>
-            <a><img src="./assets/icons/icons-sns-twitch.png" width="30" heigth="30" /></a>
-          </li>
-          <li>
-            <a><img src="./assets/icons/icons-sns-facebook.png" width="30" heigth="30" /></a>
-          </li>
-          <li>
-            <a><img src="./assets/icons/icons-sns-discord.png" width="30" heigth="30" /></a>
-          </li>
-          <li>
-            <a><img src="./assets/icons/icons-sns-monstercat.png" width="30" heigth="30" /></a>
-          </li>
-        </ul>
+        <div class="flex snsIconList2">
+          <ul class="flex">
+            <li><i class="fab fa-fw fa-instagram"></i></li>
+            <li><i class="fab fa-fw fa-tiktok"></i></li>
+            <li><i class="fab fa-fw fa-twitter"></i></li>
+            <li><i class="fab fa-fw fa-twitch"></i></li>
+            <li><i class="fab fa-fw fa-facebook"></i></li>
+            <li><i class="fab fa-fw fa-discord"></i></li>
+            <li><i class="fab fa-fw fa-twitch"></i></li>
+            <li><i class="fab fa-fw fa-facebook"></i></li>
+            <li><i class="fab fa-fw fa-discord"></i></li>
+          </ul>
+        </div>
       </section>
-      <section></section>
+      <section class="text-align">
+        We acknowledge with gratitude the traditional, ancestral and unceded land of the Coast
+        Salish peoples, including the territories of the Sḵwx̱wú7mesh (Squamish), Stó:lō and
+        Səl̓ílwətaʔ/Selilwitulh (Tsleil-Waututh) and xʷməθkʷəy̓əm (Musqueam) Nations, on which
+        Monstercat's Vancouver HQ stands.<br />
+        <br />
+        We acknowledge the unceded and ancestral territories of the Gabrielino/Tongva peoples on
+        which our LA team live and work.
+      </section>
     </footer>
+    <script src="./monsterCat.js" />
   </body>
 </html>

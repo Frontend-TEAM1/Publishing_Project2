@@ -1,6 +1,23 @@
+.sideBar {
+  width: 300px;
+  height: 100%;
+  background: #222;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  z-index: 1;
+  transition: all 0.35s;
+}
+
+input[id="menuIcon"]:checked + label + div {
+  right: 0;
+}
+
 .headerBar {
   margin: 1rem 2rem 4rem;
   justify-content: space-between;
+  position: sticky;
+  top: 10px;
 }
 
 .flex {
@@ -12,16 +29,16 @@
 }
 
 .alignItems_Center {
-  /* justify-content: center; */
   align-items: center;
 }
 
-/* * {
-  background-color: gray;
-} */
+nav {
+  position: fixed;
+  right: 0;
+}
 
 .snsIconList {
-  position: absolute;
+  position: fixed;
   right: 0;
   margin: 2rem;
 }
@@ -34,61 +51,105 @@
   margin: 0 15rem;
 }
 
+.musicInfoText {
+  transform: rotate(180deg);
+  writing-mode: vertical-lr;
+}
+
+.musicInfoText > span {
+  color: var(--secondary-color);
+  font-size: var(--medium-font);
+  font-weight: var(--font-bolder);
+}
+
 .musicInfo {
-  /* width: 600px;
-  height: 600px; */
+  margin-left: 4rem;
   padding: 10px 10px;
   display: flex;
   /* 디스플레이block이면 align items 쓸수없음 */
   flex-direction: column;
   justify-content: center;
+  font-family: monument;
 }
 
 .ratio > div {
-  /* flex-grow: 1; */
   width: 50%;
 }
 
+.ratio > div > img {
+  max-width: 500px;
+  overflow: hidden;
+  object-fit: cover;
+}
+
 .musicInfo > div > h1 {
-  font-size: 32px;
-  font-weight: 500;
+  font-size: var(--big-font);
+  font-weight: var(--font-bolder);
+  font-family: monument;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #f1f1f1;
 }
 
 .musicInfo > div > p {
   font-size: 28px;
+  margin-top: 18px;
+  margin-bottom: 24px;
 }
 
 .musicInfo > div > button {
   font-size: 14px;
+  padding: 1.5rem 2rem;
+}
+
+.buttons > button:hover {
+  background-color: rgb(131, 131, 131);
+}
+
+.buttons > button > span {
+  padding-left: 8px;
+}
+
+.btn1 {
+  background-color: var(--secondary-color);
+  align-items: center;
+  margin-right: 10px;
+}
+
+.btn2 {
+  background-color: transparent;
+  border: 1px solid #fff;
 }
 
 .border {
-  border: 1px solid #000;
+  border: 1px solid rgb(255, 255, 255);
   padding: 16px;
 }
 
 section {
-  margin: 5rem;
+  margin: 2rem;
 }
 
 .child:nth-child(1) {
-  flex-grow: 1;
+  width: 50px;
 }
 
 .child:nth-child(2) {
-  flex-grow: 1;
+  width: 50px;
 }
 
 .child:nth-child(3) {
-  flex-grow: 9;
+  width: 800px;
+  max-width: 1200px;
 }
 
 .child:nth-child(4) {
-  flex-grow: 2;
+  width: 100px;
 }
 
 .child:nth-child(5) {
-  flex-grow: 2;
+  width: 50px;
+  right: 0;
 }
 
 .font2 {
@@ -110,4 +171,44 @@ span {
 
 .child2:nth-child(3) {
   flex-grow: 1;
+}
+
+footer > .section1 {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  padding: 2rem 0;
+}
+
+.section1 > div {
+  width: 33%;
+}
+
+footer {
+  line-height: 1.75;
+}
+
+.ratio2 > form {
+  border-bottom: 1px solid #fff;
+  max-width: fit-content;
+  margin-top: 1rem;
+}
+
+.ratio2 > form > input {
+  border-color: transparent;
+}
+
+.gray {
+  color: #898888;
+}
+
+.text-align {
+  text-align: center;
+}
+
+.section2 {
+  justify-content: space-between;
+}
+
+.snsIconList2 li {
+  margin-right: 0.5rem;
 }

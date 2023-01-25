@@ -1,5 +1,20 @@
+@font-face {
+  font-family: monument;
+  src: url(../assets/fonts/monumentextended-freeforpersonaluse/MonumentExtended-FreeForPersonalUse/MonumentExtended-Regular.otf);
+}
+
+@font-face {
+  font-family: monsterrat;
+  src: url(../assets/fonts/Monsterrat/static/Montserrat-Medium.ttf);
+}
+
+@font-face {
+  font-family: monItalic;
+  src: url(../assets/fonts/Monsterrat/static/Montserrat-Italic.ttf);
+}
+
 * {
-  color: rgb(52, 52, 52);
+  color: rgb(255, 255, 255);
 }
 
 * {
@@ -7,6 +22,45 @@
   padding: 0;
   box-sizing: border-box;
   list-style: none;
+}
+
+:root {
+  /* 테마 */
+  --primary-color: rgb(255, 255, 255);
+  --secondary-color: #50a584;
+  --font-color: rgb(255, 255, 255);
+  --font-subColor: rgb(131, 131, 131);
+
+  /* 팔레트 */
+  --gray100: #e9e9e9;
+  --gray200: #d9d9d9;
+  --gray300: #656565;
+
+  /* 폰트크기 */
+  --small-font: 14px;
+  --medium-font: 18px;
+  --big-font: 32px;
+
+  /* 폰트굵기 */
+  --font-normal: 100;
+  --font-bold: 400;
+  --font-bolder: 700;
+}
+
+/* 배경화면 */
+
+body {
+  width: 100%;
+  background: linear-gradient(
+      to bottom,
+      rgb(51, 51, 51, 0.7) 5%,
+      rgb(0, 0, 0, 0.5) 15%,
+      rgb(0, 0, 0) 50%,
+      rgb(0, 0, 0) 100%
+    ),
+    url(../assets/img/concept-image.webp) no-repeat;
+  backdrop-filter: blur(10px);
+  background-size: contain;
 }
 
 section {
