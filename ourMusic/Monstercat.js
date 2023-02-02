@@ -1,3 +1,5 @@
+// import songList from './songList.json' assert {type : 'json'};
+
 // 배너바꾸기
 const musicData = [
     {
@@ -119,3 +121,18 @@ function auto(){
     }
     $buttonIndex.children[btnIndex].style.backgroundColor = 'white';
 }
+
+// 카드 만들기
+/* 
+const $latestSection = document.querySelector('#latestList');
+for ( item of songList) {
+    console.log('정상작동');
+    const $listItem = document.createElement('div');
+    $listItem.innerHTML = `
+        <img src=${item.src} />
+        <span>${item.title}</span>
+        <span>${item.singer}</span>
+    `;
+    $latestSection.append($listItem);
+}
+*/
